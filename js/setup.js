@@ -58,3 +58,10 @@ fireball.addEventListener('click', function () {
   var fireballColor = Math.floor(Math.random() * wizardFireballColor.length);
   fireball.style.background = wizardFireballColor[fireballColor];
 });
+
+function setHtmlValues() {
+  // ARIA roles
+  setup.setAttribute('role', 'dialog');
+}
+
+setHtmlValues();
