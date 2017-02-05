@@ -3,6 +3,7 @@
 // Menu
 var setup = document.querySelector('.setup');
 var setupOpen = document.querySelector('.setup-open');
+var setupOpenIcon = document.querySelector('.setup-open-icon');
 var setupClose = document.querySelector('.setup-close');
 
 // Wizard
@@ -62,6 +63,10 @@ fireball.addEventListener('click', function () {
 function setHtmlValues() {
   // ARIA roles
   setup.setAttribute('role', 'dialog');
+  setupOpenIcon.setAttribute('role', 'button');
+  setupOpenIcon.setAttribute('tabindex', '0');
+  setupClose.setAttribute('role', 'button');
+  setupClose.setAttribute('tabindex', '0');
 }
 
 setHtmlValues();
