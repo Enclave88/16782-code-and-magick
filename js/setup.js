@@ -80,8 +80,8 @@ setupOpen.addEventListener('click', getInvisibleClass);
 setupOpenIcon.addEventListener('keydown', function (e) {
   if (e.keyCode && e.keyCode === ENTER_KEY_CODE) {
     getInvisibleClass();
-    document.addEventListener('keydown', function (e) {
-      if (e.keyCode && e.keyCode === ESCAPE_KEY_CODE) {
+    document.addEventListener('keydown', function (evt) {
+      if (evt.keyCode && evt.keyCode === ESCAPE_KEY_CODE) {
         setInvisibleClass();
       }
     });
